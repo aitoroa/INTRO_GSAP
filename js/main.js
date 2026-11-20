@@ -7,8 +7,12 @@
 
 /* ---------- TAREA 1 · El tornillo del logo gira (.tornillo) ----------
    gsap.to() con rotation, duration, ease: 'none' y repeat: -1 */
-
-
+gsap.to(".tornillo", {
+   rotation: 360, //Grados
+   duration: 5, //Segundos 
+   ease: "none", //Para desactivar la aceleración (que está activada por defecto) y que gire a velocidad constante
+   repeat: -1 //Para infinitas repeticiones -1
+});
 
 /* ---------- TAREA 2 · Colocar el escaparate (#colocar y .tarjeta) ----------
    Al pulsar el botón, las tarjetas entran escalonadas: gsap.fromTo() con stagger */
